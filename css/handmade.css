@@ -1,0 +1,108 @@
+.nav-list > li:nth-child(2) > a {
+  background-color: #8ad8dc;
+  padding: 0 8px;
+}
+
+.class-container {
+  width: 1200px;
+  margin: 60px auto 60px auto;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+}
+
+.class-card {
+  padding: 20px 16px;
+  background-color: #faf8f5;
+  width: 386px;
+  margin: 0 16px;
+}
+
+.class-title {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.class-content {
+  line-height: 1.5;
+}
+
+h2 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rundown-container {
+  width: 1200px;
+  margin: 60px auto 100px auto;
+  padding: 0 100px;
+}
+
+.rundown-list {
+  display: flex;
+}
+
+.rundown-content {
+  margin-left: 100px;
+  padding-left: 30px;
+  border-left: 1px solid #dad9d9;
+}
+
+.rundown-title {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.rundown-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffc368;
+}
+
+.rundown-time {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.rundown-text {
+  font-size: 16px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.comic {
+  padding: 20px 0;
+}
+
+.rundown-title-end {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  list-style: none;
+}
+
+.rundown-title-end::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 428px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffc368;
+}

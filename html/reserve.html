@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小農回嘉 | 入園預約</title>
+    <link rel="shortcut icon" href="../img/common/favorite-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/commonStyle.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/reserve.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../fullCalendar/main.css" rel="stylesheet" />
+    <script src="../fullCalendar/main.js"></script>
+    <!-- 日曆轉成中文 -->
+    <script src="../fullCalendar/locales-all.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          locale: "zh-tw",
+          navLinks: true,
+          contentHeight: 500,
+          events: [
+            {
+              title: "公休日",
+              start: "2021-10-04",
+              end: "false",
+            },
+            {
+              title: "公休日",
+              start: "2021-10-18",
+              end: "false",
+            },
+            {
+              title: "公休日",
+              start: "2021-10-25",
+              end: "false",
+            },
+            {
+              title: "全天尚可預約",
+              start: "2021-10-26",
+              end: "false",
+              backgroundColor: "#6EC565",
+              borderColor: "#FAF8F5",
+            },
+            {
+              title: "全天尚可預約",
+              start: "2021-10-27",
+              end: "false",
+              backgroundColor: "#6EC565",
+              borderColor: "#FAF8F5",
+            },
+            {
+              title: "全天尚可預約",
+              start: "2021-10-28",
+              end: "false",
+              backgroundColor: "#6EC565",
+              borderColor: "#FAF8F5",
+            },
+            {
+              title: "尚可預約",
+              start: "2021-10-29T08:00:00",
+              end: "2021-10-29T11:00:00",
+              backgroundColor: "#6EC565",
+              borderColor: "#FAF8F5",
+            },
+            {
+              title: "尚可預約",
+              start: "2021-10-31T13:00:00",
+              end: "2021-10-31T16:00:00",
+              backgroundColor: "#6EC565",
+              borderColor: "#FAF8F5",
+            },
+          ],
+
+          //   headerToolbar: {
+          //       left: "prev,next today,",
+          //       center: "title",
+          //     right: "dayGridMonth, timeGridWeek, timeGridDay",
+          //   },
+        });
+        calendar.render();
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../html/index.html"
+          ><img src="../img/common/logo.png" class="logo"
+        /></a>
+        <ul class="nav-list">
+          <li><a href="../html/info.html">園區資訊</a></li>
+          <li><a href="../html/handmade.html">手作活動</a></li>
+          <li><a href="../html/reserve.html">入園預約</a></li>
+          <li><a href="../html/qa.html">常見問題</a></li>
+          <li><a href="../html/market.html">小農市集</a></li>
+        </ul>
+      </nav>
+      <img src="../img/reserve/banner.png" />
+    </header>
+
+    <div class="calendar-container">
+      <div id="calendar"></div>
+    </div>
+
+    <div class="form-container">
+      <h2>入園預約</h2>
+      <img src="../img/reserve/farmer.png" class="farmer" />
+      <ul class="tips">
+        預約小提醒
+        <li>．入園費用$200/人，手作體驗費用依不同課程另外計算</li>
+        <li>．若臨時無法來園請致電0736-77-2511取消預約</li>
+      </ul>
+      <form method="post">
+        <label for="name">預約姓名</label>
+        <input type="text" id="name" size="30" />
+        <br />
+        <br />
+        <label for="phone">聯繫電話</label>
+        <input type="text" id="phone" size="30" />
+        <br />
+        <br />
+        <label for="mail">電子信箱</label>
+        <input type="text" id="mail" size="30" />
+        <br />
+        <br />
+        <label for="people">入園人數</label>
+        <select name="numberOfP" id="people" style="width: 230px">
+          <option value="1">1人</option>
+          <option value="2">2人</option>
+          <option value="3">3人</option>
+          <option value="3">4人</option>
+          <option value="3">5人</option>
+          <option value="3">6人</option>
+          <option value="3">7人</option>
+          <option value="3">8人</option>
+          <option value="3">9人</option>
+          <option value="3">團體</option>
+        </select>
+        <br />
+        <br />
+        <label for="date">來園日期</label>
+        <input type="date" id="date" style="width: 230px" />
+        <br />
+        <br />
+        <label for="people">入園時段</label>
+        <select name="numberOfP" id="people" style="width: 230px">
+          <option value="am">上午8:00~11:00</option>
+          <option value="pm">下午13:00-16:00</option>
+        </select>
+        <br />
+        <br />
+        <div class="handmade-container">
+          <div class="title-container">
+            <div class="title">手作體驗</div>
+          </div>
+          <div class="checkbox-container">
+            <p>
+              <input type="checkbox" name="handmade_1[]" id="option1" />
+              <label for="option1">窯烤水果麵包　$350/人</label>
+            </p>
+
+            <p>
+              <input type="checkbox" name="fhandmade_1[]" id="option2" />
+              <label for="option2">Pizza自己做　$300/人</label>
+            </p>
+            <p>
+              <input type="checkbox" name="fhandmade_1[]" id="option3" />
+              <label for="option3">天然果醬　$250/人</label>
+            </p>
+            <p>
+              <input type="checkbox" name="fhandmade_1[]" id="option4" />
+              <label for="option4">好大一罐梅子蕃茄　$250/人</label>
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <button><a href="../html/reserve.html">送出預約</a></button>
+        <p class="confirmed">
+          *
+          預約已成功送出，請至信箱收信預約內容確認無誤，來園前一日工作人員會與您致電確認。
+        </p>
+      </form>
+    </div>
+  </body>
+  <!-- 頁尾 -->
+  <hr width="1200px" Color="#D9D9D9" />
+  <footer>
+    <div class="footer">
+      <img src="../img/common/logo.png" />
+      <div class="info">
+        <p>
+          <img src="../img/common/icon-phone.png" />　聯繫電話　0736-77-2511
+        </p>
+        <p>
+          <img
+            src="../img/common/icon-location-heart.png"
+          />　台灣嘉義縣新港鄉溪北村8856號
+        </p>
+      </div>
+      <a href="../html/reserve.html"
+        >預約入園<img src="../img/common/arrow.png" class="arrow"
+      /></a>
+    </div>
+  </footer>
+  <hr width="1200px" Color="#D9D9D9" />
+</html>

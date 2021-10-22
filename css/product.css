@@ -1,0 +1,137 @@
+.nav-list > li:nth-child(6) > a {
+  background-color: #8ad8dc;
+  padding: 0 8px;
+}
+
+.top-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header {
+  width: auto;
+  margin: 0;
+}
+
+.product-container {
+  display: flex;
+  margin-top: 48px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.shopping-cart {
+  display: block;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.product-info-container {
+  margin-top: 120px;
+}
+
+.ml {
+  color: gray;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.8;
+  padding: 8px 0;
+}
+
+.product-text {
+  line-height: 1.5;
+  padding: 8px 0;
+}
+
+.product-subtitle {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+/* 數量區 */
+.count-container {
+  display: flex;
+  border-bottom: 1px solid #8ad8dc;
+  width: 390px;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.count-container p {
+  line-height: 1.5;
+  width: 60%;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 50px;
+  line-height: 1.8;
+}
+
+button:first-child {
+  outline: none;
+  background-color: #54bcc5;
+  color: white;
+  font-size: 18px;
+  padding: 14px 48px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+button:last-child {
+  outline: none;
+  background-color: white;
+  color: #54bcc5;
+  font-size: 18px;
+  padding: 13px 52px;
+  border: 1px solid #54bcc5;
+  border-radius: 4px;
+}
+
+button:first-child:hover {
+  background-color: #39b6c2;
+}
+
+button:last-child:hover {
+  border: 1px solid #48a1ab;
+  color: #48a1ab;
+}
+
+.product-img {
+  padding-top: 80px;
+}
+
+/* 其他商品區 */
+
+.other-product {
+  margin: 100px auto 16px auto;
+  width: 1200px;
+  padding-left: 220px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.bottom-container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  padding: 0 0 80px 220px;
+}
+
+.other-product-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.card:first-child,
+.card:nth-child(2) {
+  margin-right: 20px;
+}

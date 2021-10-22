@@ -1,0 +1,119 @@
+.weather-news-container,
+.aboutus-container,
+.cost-container,
+.remind-bg {
+  width: 1200px;
+  margin: 70px auto;
+  display: flex;
+}
+
+.weather-container {
+  display: flex;
+  padding: 20px 40px;
+  background-color: #faf8f5;
+  border-radius: 4px;
+  width: 420px;
+}
+
+.weather {
+  text-align: center;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.weather p {
+  margin-top: 8px;
+}
+
+.temperature {
+  padding-top: 16px;
+}
+
+.tempertaure-title {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.tempertaure-content {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.news-container {
+  padding: 16px;
+  margin-left: 40px;
+  width: 70%;
+}
+.news-container p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutus-card-left {
+  width: 488px;
+}
+
+.aboutus-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  padding: 8px;
+}
+
+.aboutus-content {
+  padding: 8px;
+  line-height: 1.5;
+}
+
+.aboutus-card-right {
+  padding: 0 20px;
+}
+.card {
+  width: 285px;
+  margin-right: 20px;
+}
+
+.card-top-container {
+  display: flex;
+}
+
+.card-bottom-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.cost-title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.cost-content {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  padding-top: 16px;
+}
+
+.cost-container div {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.remind-bg {
+  background-image: url(../img/index/bg.png);
+  height: 447px;
+  position: relative;
+}
+
+.remind-content {
+  background-color: white;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  border-radius: 0 20px 0 0;
+  padding: 40px 125px;
+}

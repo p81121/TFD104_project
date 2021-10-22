@@ -1,0 +1,108 @@
+.nav-list > li:first-child > a {
+  background-color: #8ad8dc;
+  padding: 0 8px;
+}
+h2 {
+  width: 1200px;
+  margin: 60px auto 20px auto;
+  padding-left: 40px;
+  background-color: #faf8f5;
+}
+.fruit-container {
+  width: 1200px;
+  margin: 0px auto 120px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fruit-card {
+  text-align: center;
+}
+
+.fruit-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #3e3214;
+}
+
+.fruit-content {
+  width: 240px;
+  line-height: 1.5;
+  color: #3e3214;
+  text-align: left;
+}
+
+.fruit-container > .fruit-card:first-child {
+  margin-top: 40px;
+}
+
+.fruit-container > .fruit-card:last-child {
+  margin-top: 40px;
+}
+
+.fruit-card:hover img {
+  transform-origin: 50% 50%;
+  transform: scale(0.9);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.classroom-container,
+.bake-container,
+.farm-container,
+iframe,
+.traffic-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 8px;
+}
+
+.content {
+  line-height: 1.5;
+  margin: 8px;
+}
+
+.classroom-text-area {
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.bake-text-area {
+  margin-top: 250px;
+  margin-right: 40px;
+
+  padding-left: 200px;
+}
+
+.farm-text-area {
+  margin-top: 200px;
+  margin-left: 40px;
+}
+
+.traffic-container {
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+
+.traffic-card {
+  padding: 24px;
+}
+
+.traffic-title {
+  list-style: 1.5;
+  margin-bottom: 8px;
+}
+
+.traffic-content {
+  font-weight: bold;
+  list-style: 1.5;
+  font-size: 18px;
+  line-height: 1.8;
+}

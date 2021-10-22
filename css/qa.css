@@ -1,0 +1,44 @@
+.nav-list > li:nth-child(4) > a {
+  background-color: #8ad8dc;
+  padding: 0 8px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 100px;
+}
+
+.qa-title {
+  background-color: #8ad8dc;
+  height: 45px;
+  border-radius: 4px;
+  color: #3e3214;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 30px 0 10px 0;
+}
+
+.qa-title:hover {
+  background-color: #abe6e9;
+}
+
+.item {
+  padding: 0 16px;
+}
+
+.open-close {
+  position: absolute;
+  right: 16px;
+}
+
+.qa-content {
+  padding: 16px 70px;
+  line-height: 1.8;
+  /* display: none; */
+}

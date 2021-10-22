@@ -1,0 +1,132 @@
+.nav-list > li:nth-child(3) > a {
+  background-color: #8ad8dc;
+  padding: 0 8px;
+}
+
+/* 調整日曆樣式 */
+.calendar-container {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+/* 預約表單 */
+.form-container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  line-height: 1.5;
+  font-size: 18px;
+  position: relative;
+}
+form {
+  margin-left: 50%;
+  transform: translateX(-40%);
+  margin-top: 40px;
+}
+H2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.farmer {
+  position: absolute;
+  right: 0;
+}
+.tips {
+  list-style: none;
+  margin-left: 50%;
+  transform: translateX(-40%);
+  line-height: 1.8;
+}
+
+.handmade-container {
+  display: flex;
+}
+
+form input[type="text"]:focus {
+  border: 2px #54bcc5 solid;
+  outline: none;
+}
+
+form select:focus {
+  outline: none;
+}
+
+form input[type="date"]:focus {
+  outline: none;
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-container input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/reserve/icon_check_white.png);
+  background-size: contain;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label::before {
+  background-image: url(../img/reserve/icon_check.png);
+}
+
+.checkbox-container input[type="checkbox"]:checked + label {
+  border: 2px #54bcc5 solid;
+  color: black;
+}
+
+.checkbox-container label {
+  border: 1px rgb(170, 170, 170) solid;
+  border-radius: 4px;
+  margin-left: 10px;
+  padding: 2px 20px 2px 8px;
+}
+
+.checkbox-container p {
+  margin-bottom: 16px;
+  color: rgb(170, 170, 170);
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+  border: 1px #54bcc5 solid;
+  line-height: 1.5;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ff678a;
+  border: none;
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 4px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button a {
+  color: white;
+  cursor: default;
+}
+
+button:hover {
+  background-color: #fcb1c2;
+}
+
+.confirmed {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}

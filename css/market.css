@@ -1,0 +1,100 @@
+.nav-list > li:nth-child(5) > a {
+  background-color: #8ad8dc;
+  padding: 0 8px;
+}
+
+.vegetable-container,
+.product-container {
+  width: 1200px;
+  margin: 80px auto 100px auto;
+}
+
+.vegetable-content {
+  display: flex;
+}
+
+.vegetable-card {
+  margin-top: 14px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.vegetable-title,
+.second-product-title {
+  font-weight: bold;
+  line-height: 1.8;
+  padding-left: 8px;
+}
+
+.vegetable-price,
+.second-product-price {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.main-product-container {
+  display: flex;
+  padding: 40px 80px;
+  background-color: #faf8f5;
+  margin-top: 20px;
+}
+
+.main-product-content {
+  margin-left: 122px;
+}
+
+.new {
+  color: gray;
+  margin: 20px 0;
+}
+
+.main-product-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.main-product-price {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.main-product-info {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0 80px 0;
+}
+
+.shopping {
+  background-color: #ffe8c6;
+  padding: 8px 40px;
+  cursor: default;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.shopping img {
+  transition: margin-left 0.5s;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.shopping:hover img {
+  margin-left: 30px;
+}
+
+.second-product-container {
+  display: flex;
+}
+
+.second-product-card {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #faf8f5;
+}
+
+.second-product-card:last-child {
+  margin-left: 16px;
+}
