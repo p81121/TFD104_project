@@ -12,11 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/normalize.css" rel="stylesheet" />`
     <link href="../css/commonStyle.css" rel="stylesheet" />
     <link href="../css/header.css" rel="stylesheet" />
     <link href="../css/product.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
+    <script src="../js/product.js"></script>
   </head>
   <body>
     <div class="top-container">
@@ -60,9 +61,9 @@
           <!-- 數量區塊 -->
           <div class="count-container">
             <p>數量</p>
-            <img src="../img/product/icon_minus.png" />
-            <div class="number">1</div>
-            <img src="../img/product/icon_add.png" />
+            <img id="minus" src="../img/product/icon_minus.png" />
+            <div id="product-count" class="number">1</div>
+            <img id="add" src="../img/product/icon_add.png" />
           </div>
           <div class="button-container">
             <button>加入購物車</button>
