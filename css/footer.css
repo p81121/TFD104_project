@@ -28,3 +28,12 @@
   left: 0;
   top: 60px;
 }
+
+.tibame {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.tibame a {
+  cursor: pointer;
+}
