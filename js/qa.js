@@ -18,9 +18,9 @@ window.onload = function () {
     let imgSrc = img.src;
 
     if (imgSrc.indexOf("add") != -1) {
-      img.src = "../img/qa/icon_minus.png";
+      img.src = "./img/qa/icon_minus.png";
     } else {
-      img.src = "../img/qa/icon_add.png";
+      img.src = "./img/qa/icon_add.png";
     }
   }
 
