@@ -30,7 +30,13 @@ header {
 }
 
 .product-info-container {
-  margin-top: 120px;
+  margin-top: 140px;
+  padding-right: 40px;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 16px;
 }
 
 .ml {
@@ -106,7 +112,7 @@ button:last-child:hover {
 }
 
 .product-img {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 /* 其他商品區 */
