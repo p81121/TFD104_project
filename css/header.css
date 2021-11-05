@@ -61,3 +61,72 @@ a:hover::after {
     font-size: 20px;
   }
 }
+
+/* 為RWD新增的樣式 */
+
+.rwd-header {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: sticky;
+  top: 0;
+  display: none;
+  z-index: 1000;
+}
+.rwd-top {
+  background: #ff678a;
+  text-align: right;
+  height: 40px;
+}
+
+.rwd-top a {
+  color: white;
+  line-height: 40px;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.rwd-navbar {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 1px 4px rgb(202, 202, 202);
+}
+
+.rwd-logo {
+  margin: auto;
+  display: block;
+}
+
+.burger {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.rwd-burger-list-item > li {
+  text-align: center;
+}
+
+.rwd-burger-list-item > li a {
+  line-height: 40px;
+  display: block;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.rwd-burger-list {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .videobox,
+  nav {
+    display: none;
+  }
+
+  .rwd-header {
+    display: block;
+  }
+
+  footer {
+    background-color: #faf8f5;
+  }
+}

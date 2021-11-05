@@ -148,3 +148,60 @@ video {
     margin-top: 16px;
   }
 }
+
+/* 為RWD新增的樣式 */
+.rwd-weather {
+  margin-top: 40px;
+  display: none;
+  justify-content: center;
+}
+
+.rwd-weather img {
+  width: 40px;
+}
+
+.rwd-weather p {
+  line-height: 40px;
+  margin: 0 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .weather-container {
+    display: none;
+  }
+
+  .news-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .news-container p {
+    font-size: 16px;
+  }
+
+  .rwd-weather {
+    display: flex;
+  }
+
+  .weather-news-container {
+    margin: 0px;
+  }
+
+  .aboutus-container,
+  .cost-container {
+    display: block;
+  }
+  .aboutus-container {
+    margin-top: 40px;
+  }
+  .aboutus-card-left {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  .remind-content {
+    position: static;
+    padding: 80px 40px;
+    border-radius: 0;
+  }
+}

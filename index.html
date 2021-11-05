@@ -19,6 +19,27 @@
     <link href="./css/footer.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- RWD的nav區域 -->
+    <div class="rwd-header">
+      <div class="rwd-top">
+        <a href="./reserve.html">入園預約</a
+        ><a href="./market.html">小農市集</a>
+      </div>
+      <div class="rwd-navbar">
+        <img src="./img/common/rwd-nav-logo.png" class="rwd-logo" />
+        <img src="./img/common/rwd-nav-burger.png" class="burger" />
+      </div>
+      <div class="rwd-burger-list">
+        <ul class="rwd-burger-list-item">
+          <li><a href="./info.html">園區資訊</a></li>
+          <li><a href="./handmade.html">手作活動</a></li>
+          <li><a href="./reserve.html">入園預約</a></li>
+          <li><a href="./qa.html">常見問題</a></li>
+          <li><a href="./market.html">小農市集</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 桌機的nav區域 -->
     <header>
       <nav>
         <a href="./index.html"
@@ -38,6 +59,13 @@
         </video>
       </div>
     </header>
+
+    <div class="rwd-weather">
+      <img src="./img/index/sunny.png" />
+      <p>晴時多雲</p>
+      <p>嘉義氣溫 27 ~ 33°C</p>
+      <p>降雨機率 13%</p>
+    </div>
 
     <main>
       <div class="weather-news-container">
@@ -129,6 +157,7 @@
 
       <div class="remind-bg">
         <div class="remind-content">
+          <p class="cost-title">貼心提醒</p>
           <p class="cost-content">果園提供免費塑膠袋和免洗手套。</p>
           <p class="cost-content">
             自備：防曬防雨、防蚊蟲、手帕或面紙、扇子或手持小電扇等個人用品。
@@ -142,33 +171,29 @@
       </div>
     </main>
 
+    <!-- 頁尾 -->
+    <footer>
+      <div class="divider"></div>
+      <div class="footer">
+        <div class="footer-logo"><img src="./img/common/logo.png" /></div>
+        <div class="info">
+          <p>聯繫電話　0736-77-2511</p>
+          <p>台灣嘉義縣新港鄉溪北村8856號</p>
+        </div>
+        <a href="./reserve.html" class="cta"
+          >預約入園<img src="./img/common/arrow.png" class="arrow"
+        /></a>
+      </div>
+      <div class="divider"></div>
+      <div class="tibame">
+        本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用<br />參考資源:https://www.kuwa.com.tw/harvest.html。若有侵權疑慮，您可以私訊<a
+          href="https://www.facebook.com/TibaMe/"
+          >[緯育TibaMe]</a
+        >，後續會由專人協助處理
+      </div>
+    </footer>
     <a class="back_to_top" title="Наверх">&uarr;</a>
     <script src="./js/backtotop.js"></script>
+    <script src="./js/rwd-header.js"></script>
   </body>
-
-  <!-- 頁尾 -->
-  <footer>
-    <div class="divider"></div>
-    <div class="footer">
-      <div class="footer-logo"><img src="./img/common/logo.png" /></div>
-      <div class="info">
-        <p><img src="./img/common/icon-phone.png" />　聯繫電話　0736-77-2511</p>
-        <p>
-          <img
-            src="./img/common/icon-location-heart.png"
-          />　台灣嘉義縣新港鄉溪北村8856號
-        </p>
-      </div>
-      <a href="./reserve.html"
-        >預約入園<img src="./img/common/arrow.png" class="arrow"
-      /></a>
-    </div>
-    <div class="divider"></div>
-    <div class="tibame">
-      本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用<br />參考資源:https://www.kuwa.com.tw/harvest.html。若有侵權疑慮，您可以私訊<a
-        href="https://www.facebook.com/TibaMe/"
-        >[緯育TibaMe]</a
-      >，後續會由專人協助處理
-    </div>
-  </footer>
 </html>
