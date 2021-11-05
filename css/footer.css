@@ -1,7 +1,15 @@
 .footer {
-  width: 1200px;
+  max-width: 1200px;
   margin: 20px auto;
   display: flex;
+  padding: 0 20px;
+}
+
+.divider {
+  height: 0.5px;
+  background: #d9d9d9;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .info p {
@@ -9,8 +17,9 @@
 }
 
 .info {
-  padding-top: 24px;
-  margin-left: 60px;
+  flex-basis: 50%;
+  margin-top: 20px;
+  padding-left: 40px;
 }
 
 .footer a {
@@ -19,7 +28,6 @@
   font-weight: bold;
   width: 200px;
   padding-top: 40px;
-  margin-left: 300px;
   cursor: pointer;
 }
 
@@ -30,11 +38,21 @@
 }
 
 .tibame {
-  width: 1200px;
-  margin: 40px auto 0 auto;
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
   font-size: 14px;
   text-align: center;
 }
 .tibame a {
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-logo img {
+    max-width: 100%;
+  }
+
+  .back_to_top {
+    right: 20px;
+  }
 }

@@ -1,8 +1,9 @@
 header {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
 }
 
 nav {
@@ -21,7 +22,6 @@ a {
 
 .nav-list li {
   font-size: 24px;
-  font-weight: bold;
   margin: 20px 20px;
   text-align: center;
 }
@@ -42,4 +42,22 @@ a:hover::after {
   transform: scaleX(1);
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transform-origin: center left;
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 98%;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+
+  .nav-list {
+    width: 140px;
+  }
+
+  .nav-list li {
+    font-size: 20px;
+  }
 }

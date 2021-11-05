@@ -2,9 +2,15 @@
 .aboutus-container,
 .cost-container,
 .remind-bg {
-  width: 1200px;
+  max-width: 1200px;
   margin: 70px auto;
   display: flex;
+  padding: 0 20px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 .weather-container {
@@ -18,11 +24,12 @@
 .weather {
   text-align: center;
   font-weight: bold;
+  margin-top: 20px;
   margin-right: 20px;
 }
 
 .weather p {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .temperature {
@@ -31,7 +38,7 @@
 
 .tempertaure-title {
   font-weight: bold;
-  line-height: 1.5;
+  margin-top: 16px;
 }
 
 .tempertaure-content {
@@ -48,12 +55,9 @@
 .news-container p {
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.8;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.aboutus-card-left {
-  width: 488px;
 }
 
 .aboutus-title {
@@ -69,11 +73,18 @@
 }
 
 .aboutus-card-right {
-  padding: 0 20px;
+  padding-left: 20px;
 }
+
+.aboutus-card-left {
+}
+.aboutus-card-left img {
+  max-width: 100%;
+}
+
 .card {
-  width: 285px;
   margin-right: 20px;
+  width: 100%;
 }
 
 .card-top-container {
@@ -85,6 +96,9 @@
   margin-top: 30px;
 }
 
+.cost-container img {
+  max-width: 100%;
+}
 .cost-title {
   font-size: 32px;
   font-weight: bold;
@@ -98,11 +112,10 @@
   padding-top: 16px;
 }
 
-.cost-container div {
-  margin-left: 80px;
-  margin-top: 80px;
+.money {
+  margin: 40px 0 0 40px;
+  line-height: 1.8;
 }
-
 .remind-bg {
   background-image: url(../img/index/bg.png);
   height: 447px;
@@ -116,4 +129,22 @@
   left: 0;
   border-radius: 0 20px 0 0;
   padding: 40px 125px;
+}
+
+@media screen and (max-width: 992px) {
+  .card img {
+    max-width: 100%;
+  }
+
+  .cost-title {
+    font-size: 24px;
+  }
+
+  .cost-content {
+    font-size: 16px;
+  }
+
+  .money {
+    margin-top: 16px;
+  }
 }
