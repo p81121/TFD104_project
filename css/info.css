@@ -9,7 +9,7 @@ h2 {
   background-color: #faf8f5;
 }
 .fruit-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0px auto 120px auto;
   display: flex;
   justify-content: space-around;
@@ -52,9 +52,10 @@ h2 {
 .farm-container,
 iframe,
 .traffic-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  border: 1px solid blue;
 }
 
 .title {
@@ -62,6 +63,11 @@ iframe,
   font-weight: bold;
   line-height: 1.6;
   margin: 8px;
+}
+
+.place-photo {
+  border: 1px solid red;
+  max-width: 100%;
 }
 
 .content {
@@ -72,18 +78,20 @@ iframe,
 .classroom-text-area {
   margin-top: 70px;
   margin-left: 40px;
+  width: 50%;
 }
 
 .bake-text-area {
   margin-top: 250px;
   margin-right: 40px;
-
   padding-left: 200px;
+  width: 50%;
 }
 
 .farm-text-area {
-  margin-top: 200px;
+  margin-top: 140px;
   margin-left: 40px;
+  width: 50%;
 }
 
 .traffic-container {

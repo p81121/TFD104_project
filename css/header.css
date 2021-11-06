@@ -6,6 +6,10 @@ header {
   padding-left: 20px;
 }
 
+.banner {
+  max-width: 100%;
+}
+
 nav {
   margin-top: 48px;
   margin-right: 20px;
