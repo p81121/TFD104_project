@@ -4,7 +4,7 @@
 }
 
 .class-container {
-  width: 1200px;
+  width: 1200px !important;
   margin: 60px auto 60px auto;
   display: flex;
 }
@@ -19,7 +19,6 @@
   padding: 20px 16px;
   background-color: #faf8f5;
   width: 386px;
-  margin: 0 16px;
 }
 
 .class-title {

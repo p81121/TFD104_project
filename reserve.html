@@ -106,8 +106,8 @@
         />
         <br />
         <br />
-        <label for="people">入園時段</label>
-        <select name="numberOfP" id="people" style="width: 230px">
+        <label for="time">入園時段</label>
+        <select name="numberOfP" id="time" style="width: 230px">
           <option value="am">上午8:00~11:00</option>
           <option value="pm">下午13:00-16:00</option>
         </select>
@@ -139,8 +139,8 @@
         </div>
         <br />
         <br />
-        <button><a href="#">送出預約</a></button>
-        <p class="confirmed">
+        <button type="button" id="submit-reserve">送出預約</button>
+        <p class="confirmed" style="display: none">
           *
           預約已成功送出，請至信箱收信預約內容確認無誤，來園前一日工作人員會與您致電確認。
         </p>
@@ -176,7 +176,7 @@
     <script src="./fullCalendar/locales-all.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var calendarEl = document.getElementById("calendar");
+        var calendarEl = document.getElementById("calendar")
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: "dayGridMonth",
           locale: "zh-tw",
@@ -244,9 +244,10 @@
               borderColor: "#FAF8F5",
             },
           ],
-        });
-        calendar.render();
-      });
+        })
+        calendar.render()
+      })
     </script>
+    <script src="./js/reserve.js"></script>
   </body>
 </html>
