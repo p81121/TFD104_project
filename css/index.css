@@ -76,8 +76,6 @@ video {
   padding-left: 20px;
 }
 
-.aboutus-card-left {
-}
 .aboutus-card-left img {
   max-width: 100%;
 }
@@ -203,5 +201,36 @@ video {
     position: static;
     padding: 80px 40px;
     border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .aboutus-title {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .aboutus-content {
+    font-size: 14px;
+    padding: 0;
+  }
+  .rwd-weather {
+    display: none;
+  }
+  .card-top-container,
+  .card-bottom-container {
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  .card img {
+    width: 94%;
+  }
+
+  .remind-content {
+    padding-top: 20px;
   }
 }

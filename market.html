@@ -29,7 +29,7 @@
         <img src="./img/common/rwd-nav-logo.png" class="rwd-logo" />
         <img src="./img/common/rwd-nav-burger.png" class="burger" />
       </div>
-      <div class="rwd-burger-list">
+      <div class="rwd-burger-list" style="display: none">
         <ul class="rwd-burger-list-item">
           <li><a href="./info.html">園區資訊</a></li>
           <li><a href="./handmade.html">手作活動</a></li>
@@ -53,14 +53,15 @@
           <li><a href="./market.html">小農市集</a></li>
         </ul>
       </nav>
-      <img src="./img/market/banner.png" />
+      <div><img src="./img/market/banner.png" class="banner" /></div>
     </header>
 
     <!-- 蔬菜區 -->
+    <p class="rwd-pagename">|| 小農市集 ||</p>
     <div class="vegetable-container">
       <h2>春限定 季節蔬果</h2>
       <p class="subtitle">來自嘉義在地種植，天然在地台灣味</p>
-      <hr width="1200px" Color="#DDDDDD" />
+      <hr width="100%" Color="#DDDDDD" />
       <div class="vegetable-content">
         <div class="vegetable-card">
           <img src="./img/market/asparagus.png" />
@@ -83,7 +84,7 @@
     <!-- 產品區 -->
     <div class="product-container">
       <h2>小農回嘉 限定食品</h2>
-      <hr width="1200px" Color="#DDDDDD" />
+      <hr width="100%" Color="#DDDDDD" />
       <div class="main-product-container">
         <div class="main-product-img">
           <img src="./img/market/ketchup.png" />
@@ -139,5 +140,7 @@
     </footer>
     <a class="back_to_top" title="Наверх">&uarr;</a>
     <script src="./js/backtotop.js"></script>
+    <!-- 漢堡選單 -->
+    <script src="./js/rwd-header.js"></script>
   </body>
 </html>

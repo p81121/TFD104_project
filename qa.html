@@ -17,7 +17,6 @@
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/qa.css" rel="stylesheet" />
     <link href="./css/footer.css" rel="stylesheet" />
-    <script src="./js/qa.js"></script>
   </head>
   <body>
     <!-- RWD的nav區域 -->
@@ -30,7 +29,7 @@
         <img src="./img/common/rwd-nav-logo.png" class="rwd-logo" />
         <img src="./img/common/rwd-nav-burger.png" class="burger" />
       </div>
-      <div class="rwd-burger-list">
+      <div class="rwd-burger-list" style="display: none">
         <ul class="rwd-burger-list-item">
           <li><a href="./info.html">園區資訊</a></li>
           <li><a href="./handmade.html">手作活動</a></li>
@@ -54,9 +53,9 @@
           <li><a href="./market.html">小農市集</a></li>
         </ul>
       </nav>
-      <img src="./img/qa/banner.png" />
+      <div><img src="./img/qa/banner.png" class="banner" /></div>
     </header>
-
+    <p class="rwd-pagename">|| 常見問題 ||</p>
     <div class="container">
       <div class="question-container">
         <div class="qa-title">
@@ -161,5 +160,6 @@
     </footer>
     <a class="back_to_top" title="Наверх">&uarr;</a>
     <script src="./js/backtotop.js"></script>
+    <script src="./js/qa.js"></script>
   </body>
 </html>

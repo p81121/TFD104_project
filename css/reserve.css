@@ -9,11 +9,12 @@
   height: 600px;
   margin: 0 auto;
   margin-top: 80px;
+  padding: 0 40px;
 }
 
 /* 預約表單 */
 .form-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -21,25 +22,36 @@
   font-size: 18px;
   position: relative;
 }
-form {
-  margin-left: 50%;
-  transform: translateX(-40%);
-  margin-top: 40px;
-}
+
 H2 {
   text-align: center;
   margin-bottom: 40px;
+}
+.form-area {
+  margin-top: 40px;
+  margin-left: 50%;
+  transform: translateX(-40%);
+}
+
+.tips {
+  list-style: none;
+  margin-left: 50%;
+  transform: translateX(-40%);
+  line-height: 1.8;
 }
 
 .farmer {
   position: absolute;
   right: 0;
 }
-.tips {
-  list-style: none;
-  margin-left: 50%;
-  transform: translateX(-40%);
-  line-height: 1.8;
+
+#name,
+#phone,
+#mail,
+#people,
+#date,
+#time {
+  width: 60%;
 }
 
 .handmade-container {
@@ -129,4 +141,65 @@ button:hover {
   margin-top: 16px;
   font-size: 14px;
   text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .farmer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .calendar-container {
+    display: none;
+  }
+
+  .title {
+    width: 80px;
+    margin-bottom: 8px;
+  }
+
+  label {
+    margin-bottom: 48px;
+  }
+
+  .form-container {
+    padding: 0 40px;
+  }
+  .tips,
+  .form-area {
+    transform: translateX(0%);
+    margin: 0 auto;
+  }
+
+  .form-area {
+    margin-top: 40px;
+  }
+
+  #name,
+  #phone,
+  #mail,
+  #people,
+  #date,
+  #time {
+    width: 90%;
+  }
+  .handmade-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form-container {
+    padding: 0 16px;
+  }
 }

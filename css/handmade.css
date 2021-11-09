@@ -12,7 +12,7 @@
   max-width: 1200px;
   margin-top: 20px;
   font-weight: bold;
-  /* display: none; */
+  display: none;
 }
 
 .class-container {
@@ -120,6 +120,15 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
   .rundown-list {
     display: block;
   }
@@ -140,5 +149,24 @@ h2 {
 @media screen and (max-width: 568px) {
   .rundown-content {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .rundown-container {
+    padding: 0 16px;
+  }
+
+  .class-card {
+    /* width: 300px; */
   }
 }

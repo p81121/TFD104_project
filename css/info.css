@@ -148,8 +148,15 @@ iframe,
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
   .banner {
     padding: 0 16px;
+  }
+
+  .rwd-pagename {
+    display: block;
   }
 
   .bake-text-area {
@@ -195,8 +202,28 @@ iframe,
   iframe {
     width: 410px;
   }
+}
 
-  .rwd-pagename {
+@media screen and (max-width: 414px) {
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .fruit-card {
     display: block;
+  }
+
+  .fruit-content {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  iframe {
+    width: 320px;
   }
 }

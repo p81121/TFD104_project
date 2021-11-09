@@ -106,18 +106,20 @@ a:hover::after {
   top: 16px;
 }
 
+.rwd-burger-list {
+  background-color: hsla(0, 0%, 100%, 0.95);
+}
+
 .rwd-burger-list-item > li {
   text-align: center;
 }
 
 .rwd-burger-list-item > li a {
-  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px;
   display: block;
-  border-bottom: 1px solid rgb(201, 201, 201);
-}
-
-.rwd-burger-list {
-  display: none;
+  border-bottom: 1px solid rgb(228, 223, 223);
 }
 
 @media screen and (max-width: 768px) {

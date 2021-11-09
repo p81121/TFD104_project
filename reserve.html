@@ -30,7 +30,7 @@
         <img src="./img/common/rwd-nav-logo.png" class="rwd-logo" />
         <img src="./img/common/rwd-nav-burger.png" class="burger" />
       </div>
-      <div class="rwd-burger-list">
+      <div class="rwd-burger-list" style="display: none">
         <ul class="rwd-burger-list-item">
           <li><a href="./info.html">園區資訊</a></li>
           <li><a href="./handmade.html">手作活動</a></li>
@@ -54,7 +54,7 @@
           <li><a href="./market.html">小農市集</a></li>
         </ul>
       </nav>
-      <img src="./img/reserve/banner.png" />
+      <div><img src="./img/reserve/banner.png" class="banner" /></div>
     </header>
 
     <div class="calendar-container">
@@ -69,21 +69,22 @@
         <li>．入園費用$200/人，手作體驗費用依不同課程另外計算</li>
         <li>．若臨時無法來園請致電0736-77-2511取消預約</li>
       </ul>
-      <form method="post">
+
+      <form method="post" class="form-area">
         <label for="name">預約姓名</label>
-        <input type="text" id="name" size="30" />
+        <input type="text" id="name" />
         <br />
         <br />
         <label for="phone">聯繫電話</label>
-        <input type="text" id="phone" size="30" />
+        <input type="text" id="phone" />
         <br />
         <br />
         <label for="mail">電子信箱</label>
-        <input type="text" id="mail" size="30" />
+        <input type="text" id="mail" />
         <br />
         <br />
         <label for="people">入園人數</label>
-        <select name="numberOfP" id="people" style="width: 230px">
+        <select name="numberOfP" id="people">
           <option value="1">1人</option>
           <option value="2">2人</option>
           <option value="3">3人</option>
@@ -98,16 +99,11 @@
         <br />
         <br />
         <label for="date">來園日期</label>
-        <input
-          type="date"
-          id="date"
-          placeholder="yyyy-mm-dd"
-          style="width: 230px"
-        />
+        <input type="date" id="date" placeholder="yyyy-mm-dd" />
         <br />
         <br />
         <label for="time">入園時段</label>
-        <select name="numberOfP" id="time" style="width: 230px">
+        <select name="numberOfP" id="time">
           <option value="am">上午8:00~11:00</option>
           <option value="pm">下午13:00-16:00</option>
         </select>
@@ -176,7 +172,7 @@
     <script src="./fullCalendar/locales-all.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var calendarEl = document.getElementById("calendar")
+        var calendarEl = document.getElementById("calendar");
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: "dayGridMonth",
           locale: "zh-tw",
@@ -209,44 +205,44 @@
               end: "false",
             },
             {
-              title: "全天尚可預約",
+              title: "全日可預約",
               start: "2021-11-11",
               end: "false",
               backgroundColor: "#6EC565",
               borderColor: "#FAF8F5",
             },
             {
-              title: "全天尚可預約",
+              title: "全日可預約",
               start: "2021-11-12",
               end: "false",
               backgroundColor: "#6EC565",
               borderColor: "#FAF8F5",
             },
             {
-              title: "全天尚可預約",
+              title: "全日可預約",
               start: "2021-11-23",
               end: "false",
               backgroundColor: "#6EC565",
               borderColor: "#FAF8F5",
             },
             {
-              title: "尚可預約",
-              start: "2021-11-20T08:00:00",
-              end: "2021-11-20T11:00:00",
+              title: "上午可預約",
+              start: "2021-11-20",
+              end: "2021-11-20T",
               backgroundColor: "#6EC565",
               borderColor: "#FAF8F5",
             },
             {
-              title: "尚可預約",
-              start: "2021-11-28T13:00:00",
-              end: "2021-10-28T16:00:00",
+              title: "下午可預約",
+              start: "2021-11-28",
+              end: "2021-10-28T",
               backgroundColor: "#6EC565",
               borderColor: "#FAF8F5",
             },
           ],
-        })
-        calendar.render()
-      })
+        });
+        calendar.render();
+      });
     </script>
     <script src="./js/reserve.js"></script>
   </body>
